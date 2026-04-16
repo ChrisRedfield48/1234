@@ -175,10 +175,22 @@ docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go test ./...
 ok      my-go-app       0.002s
 ```
 Соберите бинарный файл (опционально):
+
+Windows/PowerShell
+```shell
+docker run --rm -v "${PWD}:/app" -w /app golang:1.22-alpine go build -o my-app .
+```
+Любой Unix
 ```shell
 docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go build -o my-app .
 ```
 Бинарник появится в текущей папке. Запустить его можно на хосте, если он совместим, либо через Docker (опционально):
+
+Windows/PowerShell
+```shell
+docker run --rm -v "${PWD}:/app" -w /app alpine ./my-app
+```
+Любой Unix
 ```shell
 docker run --rm -v "$(pwd):/app" -w /app alpine ./my-app
 ```
@@ -213,7 +225,7 @@ Hello from Go app!
 2 + 3 = 5
 ```
 
-![Hello from my Python app!](/content/DevOps/CI_CD/img)
+![Hello from my Go app!](/content/DevOps/CI_CD/img)
 
 Опционально вы можете зайти в интерактивный режим контейнера для ознакомления и отладки:
 ```shell
