@@ -163,7 +163,7 @@ fn main() {
     // Принудительный сброс буфера вывода
     io::stdout().flush().unwrap();
     // Небольшая задержка для гарантии вывода в контейнере
-    std::thread::sleep(std::time::Duration::from_millis(100));
+    std::thread::sleep(std::time::Duration::from_millis(200));
 }
 
 ```
