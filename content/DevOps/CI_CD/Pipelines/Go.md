@@ -1,4 +1,4 @@
-## Pipeline CI на Go в GitHub Actions (не доделан)
+## Pipeline CI на Go в GitHub Actions
 
 **Цель** — учебный пример — простой проект, который можно склонировать, настроить и убедиться, что приложение в контейнере с Go, и GitHub Actions работает
 
@@ -17,7 +17,7 @@ my-go-app/
 └── README.md
 ```
 
-Структуру проекта можно сделать одной bash-командой, которая автоматически создаст все файлы и каталоги проекта:
+Структуру проекта можно сделать одной **bash**-командой, которая автоматически создаст все файлы и каталоги проекта:
 ```shell
 mkdir -p .github/workflows && \
 touch .github/workflows/ci.yml \
@@ -27,12 +27,24 @@ touch .github/workflows/ci.yml \
 
 ### 2. Инициализация Go-модуля
 
- т.к. Go в вашей ОС скорей всего не установлен
+ т.к. **Go** в вашей ОС скорей всего не установлен
 
+Windows/PowerShell (надо проверять)
+```shell
+docker run --rm -v "${PWD}:/app" -w /app golang:1.22-alpine go mod init my-go-app
+```
+Любой Unix
 ```shell
 docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go mod init my-go-app
 ```
+
 Инициализация модуля go mod для удовлетворения зависимостей
+
+Windows/PowerShell (надо проверять)
+```shell
+docker run --rm -v "${PWD}:/app" -w /app golang:1.22-alpine go mod tidy
+```
+Любой Unix
 ```shell
 docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go mod tidy
 ```
@@ -96,7 +108,7 @@ COPY --from=builder /app/my-app .
 CMD ["./my-app"]
 ```
 
-### 7. Файл базового конфига `.golangci.yml` (пока не создаю)
+### 7. Файл базового конфига `.golangci.yml` (пока не создаю) - зачем он?
 ```yaml
 linters:
   enable:
@@ -166,6 +178,11 @@ jobs:
 ```
 
 Запустите тесты через Docker, чтобы убедиться, что код работает:
+Windows/PowerShell (надо проверять)
+```shell
+docker run --rm -v "${PWD}:/app" -w /app golang:1.22-alpine go test ./...
+```
+Любой Unix
 ```shell
 docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go test ./...
 ```
@@ -176,7 +193,7 @@ ok      my-go-app       0.002s
 ```
 Соберите бинарный файл (опционально):
 
-Windows/PowerShell
+Windows/PowerShell (надо проверять)
 ```shell
 docker run --rm -v "${PWD}:/app" -w /app golang:1.22-alpine go build -o my-app .
 ```
@@ -184,9 +201,9 @@ docker run --rm -v "${PWD}:/app" -w /app golang:1.22-alpine go build -o my-app .
 ```shell
 docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go build -o my-app .
 ```
-Бинарник появится в текущей папке. Запустить его можно на хосте, если он совместим, либо через Docker (опционально):
+Бинарник программы на **Go** появится в текущей папке. Запустить его можно на хосте (на вашем компьютере), если он совместим с вашей системой, либо через **Docker** (опционально):
 
-Windows/PowerShell
+Windows/PowerShell (надо проверять)
 ```shell
 docker run --rm -v "${PWD}:/app" -w /app alpine ./my-app
 ```
@@ -200,13 +217,17 @@ Hello from Go app!
 2 + 3 = 5
 ```
 
+![Hello from my Go app!](/content/DevOps/CI_CD/img/6_workflow.png)
+
 ### 8. Проверить сборку онлайн
 
 - Закоммитьте и запушите в строго в ветку `main` этот файл в ваш репозиторий
 - Перейдите на вкладку **Actions** в вашем репозитории на **GitHub**. Вы увидите, как ваш **Workflow** запустился, а через минуту загорится **зеленая** галочка, которая означает, что все шаги прошли успешно
 
-![Скрин](/content/DevOps/CI_CD/img)
+![Скрин](/content/DevOps/CI_CD/img/5_workflow.png)
 
+
+### 9. Проверить сборку Docker-образа локально
 
 На своём компьютере, находясь в папке `my-go-app` этого репозитория выполнить:
 
@@ -225,16 +246,22 @@ Hello from Go app!
 2 + 3 = 5
 ```
 
-![Hello from my Go app!](/content/DevOps/CI_CD/img)
+![Hello from my Go app!](/content/DevOps/CI_CD/img/7_workflow.png)
 
 Опционально вы можете зайти в интерактивный режим контейнера для ознакомления и отладки:
 ```shell
 docker run -it --rm my-go-app:latest /bin/sh
 ```
+выполнить команду получения ин-фы об используемой в контейнере ОС
+```shell
+cat /etc/os-release
+```
+
+![Hello from my Go app!](/content/DevOps/CI_CD/img/8_workflow.png)
+
 выйти из контейнра:
 ```shell
 exit
 ```
-
 
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
