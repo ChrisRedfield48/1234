@@ -1,1 +1,1 @@
-## Pipeline CI на C++ в GitHub Actions (не доделан)
+## Pipeline CI на C++ в GitHub Actions

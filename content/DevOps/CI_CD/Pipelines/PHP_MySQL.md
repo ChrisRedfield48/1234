@@ -1,4 +1,4 @@
-## PHP с MySQL – приложение с базой данных
+## Pipeline CI на PHP с MySQL в GitHub Actions
 
 
 
