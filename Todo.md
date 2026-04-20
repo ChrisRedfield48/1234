@@ -27,8 +27,11 @@
 * [x] WSL 2.0 (Ubuntu)
 * [x] Virtual Box (Alt Education 11)
 * [x] Static Website on Github Pages - html+css+js  (почти все)
-* [.] Docker - загрузка и установка + основы создания конейнеров и управления
-* [ ] CI/CD
+* [x] Docker - загрузка и установка + основы создания конейнеров и управления
+* [x] Docker готовые образы
+* [x] Dockerfile
+* [.] CI/CD
+* [ ] Docker Compose
 * [ ] Контроллер домена и групповые политики на Alt Education 11
 * [ ] Антивирусы
 * [ ] Брандмауэр
