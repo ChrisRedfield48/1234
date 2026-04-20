@@ -19,7 +19,8 @@ my-rust-app/
 ├── Cargo.toml
 ├── Cargo.lock
 ├── Dockerfile # ваш Dockerfile для сборки приложения
-├── dockerignore
+├── .dockerignore
+├── .gitignore
 └── README.md
 ```
 
@@ -27,7 +28,7 @@ my-rust-app/
 ```shell
 mkdir -p .github/workflows src && \
 touch .github/workflows/rust-ci.yml \
-      Cargo.toml Cargo.lock .dockerignore src/main.rs \
+      Cargo.toml Cargo.lock .dockerignore .gitignore src/main.rs \
       Dockerfile README.md
 ```
 
@@ -206,16 +207,27 @@ target/
 Dockerfile
 ```
 
-### 7. Файл Cargo.lock остаётся пустым
+### 7. Файл  `.gitignore`
+```gitignore
+/target/
+**/*.rs.bk
+*.swp
+/.idea/
+*.iml
+```
 
-### 8. Проверить сборку онлайн
+### 8. Файл `Cargo.lock` остаётся пустым
+
+Файл `Cargo.lock` создаётся автоматически при первой сборке. Вы можете оставить его пустым или не создавать вовсе — он сгенерируется в CI.
+
+### 9. Проверить сборку онлайн
 
 - Закоммитьте и запушите в строго в ветку `main` этот файл в ваш репозиторий
 - Перейдите на вкладку **Actions** в вашем репозитории на **GitHub**. Вы увидите, как ваш **Workflow** запустился, а через минуту загорится **зеленая** галочка, которая означает, что все шаги прошли успешно
 
 ![Скрин](/content/DevOps/CI_CD/img/11_workflow.png)
 
-### 9. Проверить сборку Docker-образа локально
+### 10. Проверить сборку Docker-образа локально
 
 На своём компьютере, находясь в папке `my-rust-app` этого репозитория выполнить:
 
