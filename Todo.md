@@ -112,7 +112,7 @@
         - Привет, Docker!
         - Самостоятельные работы по сборке образов из Dockerfile - начали
         - CI/CD
-            - Первый CI Pipeline
+            - Первый CI Pipeline - некоторые сделали, другие начали
             - CI Pipeline для Python
     - Docker Compose
         -

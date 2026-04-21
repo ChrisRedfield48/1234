@@ -1,4 +1,4 @@
-## Pipeline CI на PHP с MySQL в GitHub Actions
+## Pipeline CI на PHP+MySQL в GitHub Actions
 
 
 
