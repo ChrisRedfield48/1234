@@ -75,15 +75,17 @@
         - Статический сайт на веб-сервере Nginx
         - Самостоятельные работы по сборке образов из Dockerfile
         - DevOps - CI/CD
-            - Первый CI Pipeline
-            - CI Pipeline для Python
-            - Самостоятельные работы по созданию других пайплайнов
-    - Docker Compose
-        - Docker compose конетейнер c Joomla
-        - Docker compose конетейнер c MySQL + phpMyAdmin
-        - Docker compose конетейнер c PostgreSQL+pgAdmin
-        - Docker compose конетейнер с PostgresSQL
-        - Docker compose конетейнер с Videoeditor
+            - CI Pipeline
+                - Первый CI Pipeline
+                - CI Pipeline для Python
+                - Самостоятельные работы по созданию других пайплайнов
+            - CD
+    - Docker Compose (DC)
+            - DC c Joomla
+            - DC c MySQL + phpMyAdmin
+            - DC c PostgreSQL+pgAdmin
+            - DC с PostgresSQL
+            - DC с Videoeditor
 ```
 
 > **Студенты обязаны заходить на Собрание в Teams под учётной записью, выданной им в учебной организации! Для этого нужно вводить данные своей учётной записи с доменом @s.mfui.ru**
@@ -106,15 +108,20 @@
     - Получить и запустить Docker - многие, но надо ещё +
     - Hello, World. Управление контейнером и образом, базовые команды
     - Готовые образы: получение, установка, базовые состояния - запуск, останов, перезапуск, логи, работа с контейнером, удаление контейнера и снова установка, удаление образа на примере Nginx +
-        - Самостоятельные работы по готовым Docker-образам +
-    - Dockerfile
-        - Привет, Docker!
-        - Статический сайт на веб-сервере Nginx
+        - Самостоятель +
+        - Привет, Docker! +
+        - Статический сайт на веб-сервере Nginx +
         - Самостоятельные работы по сборке образов из Dockerfile - многие сделали +
         - DevOps - CI/CD +
             - Первый CI Pipeline +
             - CI Pipeline для Python +
             - Самостоятельные работы по созданию других пайплайнов - начали
+        - Docker Compose (DC)
+            - DC c Joomla
+            - DC c MySQL + phpMyAdmin
+            - DC c PostgreSQL+pgAdmin
+            - DC с PostgresSQL
+            - DC с Videoeditor
 - Ещё раз показать настройки VS Code в контейсте WSL/расширения +
 
 Отличники: Белевитин (за две пары), Клюкина (за две пары), Винокурова (за две пары), Абдиллатов (за две пары), Дербенцев (за две пары), Савальский (за две пары), Тумашев, Мамаев (за две пары), Чудин (за две пары), Ползиков (за две пары),
