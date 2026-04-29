@@ -71,7 +71,7 @@ docker compose ps -a
 
 ### 5. Подключение pgAdmin к PostgreSQL
 
-- На вкладке **General** задайте любое понятное имя для сервера (например, My Local PostgreSQL).
+- На вкладке **General** задайте любое понятное имя для сервера (например, `My Local PostgreSQL`).
 - На вкладке Connection заполните следующие поля:
   - **Host name/address:** `postgres-db` (имя сервиса PostgreSQL из файла compose.yaml).
   - **Port:** `5432`
@@ -80,9 +80,10 @@ docker compose ps -a
   - **Password:** `mypassword`
 - Нажмите **Save**.
 
-![Screen](/content/Docker/DockerCompose/img/)
-![Screen](/content/Docker/DockerCompose/img/)
-![Screen](/content/Docker/DockerCompose/img/)
+![Screen](/content/Docker/DockerCompose/img/16.png)
+![Screen](/content/Docker/DockerCompose/img/17.png)
+![Screen](/content/Docker/DockerCompose/img/18.png)
+![Screen](/content/Docker/DockerCompose/img/19.png)
 
 ### 6. Управление и полезные команды
 
@@ -122,13 +123,36 @@ docker compose config
 ```shell
 docker compose exec postgres bash
 ```
-![Screen](/content/Docker/DockerCompose/img/)
+![Screen](/content/Docker/DockerCompose/img/20.png)
 выйти из контейнера можно командой `exit`
 
 ### 6. Удаление этого проекта
 
+Находясь в папке `postgres-pgadmin-app`
+
+1. Остановка контейнеров этого проекта:
+```shell
+docker compose down
+```
+2. Остановка с полным удалением всех данных (базы данных и файлов) - опционально:
 ```shell
 docker compose down --volumes
+```
+или для краткости:
+```shell
+docker compose down -v
+```
+(**Будьте осторожны:** эта команда удалит всё, что вы создали в проекте!).
+
+> ### Для полного удаления этого проекта, достаточно остановить его через `docker compose down` или `docker compose down --volumes` и docker-образ, после чего удалить каталог проекта `postgres-pgadmin-app`
+
+Выходим из каталога проекта
+```shell
+cd ..
+```
+и удаляем
+```shell
+rm -rf postgres-pgadmin-app
 ```
 
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
