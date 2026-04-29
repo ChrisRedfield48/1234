@@ -65,14 +65,14 @@ docker compose up -d
 
 ### 5. Подключение pgAdmin к PostgreSQL
 
-- На вкладке General задайте любое понятное имя для сервера (например, My Local PostgreSQL).
+- На вкладке **General** задайте любое понятное имя для сервера (например, My Local PostgreSQL).
 - На вкладке Connection заполните следующие поля:
-  - Host name/address: postgres-db (имя сервиса PostgreSQL из файла compose.yaml).
-  - Port: 5432
-  - Maintenance database: mydatabase
-  - Username: myuser
-  - Password: mypassword
-- Нажмите Save.
+  - **Host name/address:** `postgres-db` (имя сервиса PostgreSQL из файла compose.yaml).
+  - **Port:** `5432`
+  - **Maintenance database:** `mydatabase`
+  - ** Username:** `myuser`
+  - **Password:** `mypassword`
+- Нажмите **Save**.
 
 ### 5. Управление и полезные команды
 ```shell
