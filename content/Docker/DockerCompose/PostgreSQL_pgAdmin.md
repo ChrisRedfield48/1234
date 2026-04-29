@@ -55,10 +55,16 @@ volumes:
 ```shell
 docker compose up -d
 ```
+Дождитесь полной загрузки. Убедиться, что всё работает, можно командой:
+```shell
+docker compose ps -a
+```
+Оба контейнера (`pgadmin` и `postgres`) должны иметь статус **Up**.
 
 ### 4. Доступ к pgAdmin
 
 [Откройте в браузере адрес: http://localhost:5050](http://localhost:5050)
+
 На странице входа используйте данные, указанные в переменных окружения:
 - **Email/Username:** `admin@example.com`
 - **Password:** `admin`
@@ -74,11 +80,55 @@ docker compose up -d
   - **Password:** `mypassword`
 - Нажмите **Save**.
 
-### 5. Управление и полезные команды
+![Screen](/content/Docker/DockerCompose/img/)
+![Screen](/content/Docker/DockerCompose/img/)
+![Screen](/content/Docker/DockerCompose/img/)
+
+### 6. Управление и полезные команды
+
+Находясь в папке `postgres-pgadmin-app` можно выполнить:
+
+1. Просмотр логов приложения **phpmyadmin** в реальном времени
+```shell
+docker compose logs -f pgadmin
+```
+`-f` в режиме ожидания (в режиме реального времени)
+
+Чтобы выйти из режима просмотра логов, необходимо выполнить `Ctrl+C` в терминале
+
+2. Просмотр логов базы данных **mysql** в реальном времени
+```shell
+docker compose logs -f postgres
+```
+Чтобы выйти из режима просмотра логов, необходимо выполнить `Ctrl+C` в терминале
+
+3. Приостановить запущенный контейнер:
+```shell
+docker compose stop
+```
+4. Запустить приостановленный контейнер:
+```shell
+docker compose start
+```
+5. Перезапустить
+```shell
+docker compose restart
+```
+6. Показать конфигурацию текущего проекта:
+```shell
+docker compose config
+```
+7. Вход в контейнер **MySQL** (имя контейнера можно узнать командой `docker compose ps`)
+```shell
+docker compose exec postgres bash
+```
+![Screen](/content/Docker/DockerCompose/img/)
+выйти из контейнера можно командой `exit`
+
+### 6. Удаление этого проекта
+
 ```shell
 docker compose down --volumes
 ```
-
-### 6. Удаление этого проекта
 
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
