@@ -79,28 +79,6 @@ volumes:
   db_data:
   joomla_data:
 ```
-Версия 2
-```yml
-services:
-  db:
-    image: mysql:8.0
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: joomla
-    ports:
-      - "3308:3306"
-  joomla:
-    image: joomla:4-apache
-    depends_on:
-      - db
-    environment:
-      JOOMLA_DB_HOST: db
-      JOOMLA_DB_USER: root
-      JOOMLA_DB_PASSWORD: root
-      JOOMLA_DB_NAME: joomla
-    ports:
-      - "8082:80"
-```
 
 ### 3. Установка и запуск проекта
 
