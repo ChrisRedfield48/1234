@@ -144,7 +144,7 @@ docker compose down -v
 ```
 (**Будьте осторожны:** эта команда удалит всё, что вы создали в проекте!).
 
-> ### Для полного удаления этого проекта, достаточно остановить его через `docker compose down` или `docker compose down --volumes` и docker-образ, после чего удалить каталог проекта `postgres-pgadmin-app`
+> ### Для полного удаления этого проекта, достаточно остановить его через `docker compose down` или `docker compose down --volumes`, удалить docker-образ, после чего удалить каталог проекта `postgres-pgadmin-app`
 
 Выходим из каталога проекта
 ```shell
