@@ -29,7 +29,7 @@
 * [x] Dockerfile
 * [x] CI
 * [ ] CD
-* [ ] Docker Compose
+* [.] Docker Compose
 * [ ] Virtual Box (Alt Education 11)
 * [ ] Контроллер домена и групповые политики на Alt Education 11
 * [ ] Антивирусы
@@ -81,10 +81,7 @@
             - CD
     - Docker Compose (DC)
             - DC c Joomla
-            - DC c MySQL + phpMyAdmin
-            - DC c PostgreSQL+pgAdmin
-            - DC с PostgresSQL
-            - DC с Videoeditor
+            - Самостоятельные работы по созданию DC-проектов
 ```
 
 > **Студенты обязаны заходить на Собрание в Teams под учётной записью, выданной им в учебной организации! Для этого нужно вводить данные своей учётной записи с доменом @s.mfui.ru**
@@ -111,13 +108,14 @@
         - Привет, Docker!
         - Самостоятельные работы по сборке образов из Dockerfile - начали
         - DevOps - CI/CD
-            - CI Pipeline
-                - Первый CI Pipeline
-                - CI Pipeline для Python
-                - Самостоятельные работы по созданию других пайплайнов
+            - CI Pipeline +
+                - Первый CI Pipeline +
+                - CI Pipeline для Python +
+                - Самостоятельные работы по созданию других пайплайнов +
             - CD
-    - Docker Compose
-        -
+    - Docker Compose (DC) - начали +
+        - DC c Joomla
+        - Самостоятельные работы по созданию DC-проектов
 - Ещё раз показать настройки VS Code в контейсте WSL/расширения +
 
 Отличники: Искандаров, Толстухин, Котохин, Собко (.), Орлов (.), Сысоева, Бакшилов, Отрубняков (.), Дударева, Сорочинский (.)
