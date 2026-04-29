@@ -1,4 +1,4 @@
-## Провекты для Docker Compose
+## Проекты Docker Compose
 
 - [Docker Compose - описание](/content/Docker/DockerCompose/DockerCompose.md)
 - [Docker compose c Joomla](/content/Docker/DockerCompose/joomla.md)
