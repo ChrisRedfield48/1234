@@ -140,7 +140,7 @@ docker compose config
 ```shell
 docker compose exec mysql bash
 ```
-![Screen](/content/Docker/DockerCompose/img/14.png)
+![Screen](/content/Docker/DockerCompose/img/15.png)
 Выйти из контейнера можно командой `exit`
 
 ### 6. Удаление этого проекта
