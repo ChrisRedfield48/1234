@@ -157,9 +157,9 @@ git config --global user.email "rosa@mail.ru"
 
 Установка расширений
 
-> ### РКН заблокировал расширения для VS Code!
+> ### Установка расширений для VS Code может быть заблокирована!
 
-Временное решение:
+Временное решение, установка и обновление расширений вручную:
 - [Открываем сайт загрузчика расширений https://vsix.2i.gs/](https://vsix.2i.gs/)
 - [Находим нужное вам расширение на https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/)
 - Скачиваем нужные расширения в отдельную папку и устанавливаем их через `Install From VSIX` в `Extensions` редактора **VS Code**
