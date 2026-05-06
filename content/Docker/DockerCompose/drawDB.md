@@ -35,6 +35,8 @@ docker compose up -d
 
 [Открыть **drawDB** локально в браузере](http://localhost:5173/)
 
+![Скрин](/content/Docker/DockerCompose/img/21.png)
+
 ### 3. Удалить проект
 
 Остановить контейнер с удалением данных
