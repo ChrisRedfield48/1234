@@ -7,6 +7,7 @@
 - [Docker compose c PostgreSQL+pgAdmin](/content/Docker/DockerCompose/PostgreSQL_pgAdmin.md)
 - [Docker compose с PostgresSQL](/content/Docker/DockerCompose/PostgresSQL.md)
 - [Docker compose проект c drawDB](/content/Docker/DockerCompose/drawDB.md)
+- [Docker compose проект c Homehub](/content/Docker/DockerCompose/Homehub.md)
 - [videoeditor](https://github.com/trykimu/videoeditor)
 - []()
 
