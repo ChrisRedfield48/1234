@@ -15,11 +15,15 @@
 - После укаждого успешно выполненного задания лучше удалять его контейнер, образ и каталог, чтобы следующее задание начинать с "чистого листа"
 - Чтобы в командной строке **VS Code** быстро перейти в домашний каталог текущего пользователя, выполните `cd ~`
 
+---
+
 [Пример полного руководства по запустку контейнера с Nginx >>](/content/Docker/Dockerfile/my-site.md)
 
 - [Что такое Dockerfile?](/content/Docker/Docs/DockerfileInfo.md)
 
 - [Привет, Docker! 🐳](/content/Docker/Dockerfile/hello-world.md)
+
+---
 
 1. [Статический сайт на веб-сервере Nginx](/content/Docker/Dockerfile/my-site.md)
 1. [Простое приложение на Python](/content/Docker/Dockerfile/Python.md)
@@ -38,3 +42,5 @@
 1. [Java](/content/Docker/Dockerfile/java.md)
 1. [Qt5/C++](/content/Docker/Dockerfile/cppQt5.md)
 1. [Qt6/C++](/content/Docker/Dockerfile/cppQt6.md)
+
+---
