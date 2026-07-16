@@ -153,7 +153,7 @@ git config --global user.email "rosa@mail.ru"
     - **Settings** -> **Zoom** -> **Mouse Wheel Zoom**
 - Отключить Миникарту в редакторе
     - **Settings** -> **Editor** -› **Minimap:**
-- Велючить предложения в интегрированном терминале **VSCode** -> `Settings` -> `terminal.integrated.suggest.enabled`
+- Включить предложения в интегрированном терминале **VSCode** -> `Settings` -> `terminal.integrated.suggest.enabled`
 
 Установка расширений
 
