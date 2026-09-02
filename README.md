@@ -10,11 +10,12 @@
 - [DevOps](/content/DevOps/README.md)
 - [Практические задания](/content/StudentPracticalsLabs/README.md)
 - Предметы:
-    - [Инструментальные средства разработки ПО](/content/SoftwareDevelopmentTools/README.md)
-    - [Информационные технологии](/content/IT/README.md)
-    - [Основы проектирования баз данных](/content/Basics_database_design/README.md)
-    - [Обеспечение качества функционирования компьютерных систем](/content/Ensuring_quality_computer_systems_functioning/README.md)
-    - [Поддержка и тестирование программных модулей](/content/SupportAndTesting_of_software_modules/)
+    - [Инструментальные средства разработки ПО](/content/Courses/SoftwareDevelopmentTools/)
+    - [Информационные технологии](/content/Courses/IT/)
+    - [Основы проектирования баз данных](/content/Courses/Basics_database_design/)
+    - [Обеспечение качества функционирования компьютерных систем](/content//Courses/Ensuring_quality_computer_systems_functioning/)
+    - [Поддержка и тестирование программных модулей](/content/Courses/SupportAndTesting_of_software_modules/)
+    - [Операционные системы и среды](/content/Courses/OS_and_Environments/)
 
 ---
 
@@ -203,10 +204,10 @@ code .
 
 ## Вопросы к экзамену
 
-* [Вопросы к экзамену по дисциплине «ОСНОВЫ ПРОЕКТИРОВАНИЯ БАЗ ДАННЫХ»](/content/Basics_database_design/questions.md)
-* [Вопросы к экзамену по дисциплине «ПОДДЕРЖКА И ТЕСТИРОВАНИЕ ПРОГРАММНЫХ МОДУЛЕЙ»](/content/SupportAndTesting_of_software_modules/questions.md)
-* [Вопросы к экзамену по дисциплине «ОБЕСПЕЧЕНИЕ КАЧЕСТВА ФУНКЦИОНИРОВАНИЯ КОМПЬЮТЕРНЫХ СИСТЕМ»](/content/Ensuring_quality_computer_systems_functioning/questions.md)
-* [Вопросы к экзамену по дисциплине "Инструментальные средства разработки ПО"](/content/SoftwareDevelopmentTools/questions.md)
-* [Вопросы к экзамену по дисциплине "Информационные технологии"](/content/IT/questions.md)
+* [Вопросы к экзамену по дисциплине «ОСНОВЫ ПРОЕКТИРОВАНИЯ БАЗ ДАННЫХ»](/content/Courses/Basics_database_design/questions.md)
+* [Вопросы к экзамену по дисциплине «ПОДДЕРЖКА И ТЕСТИРОВАНИЕ ПРОГРАММНЫХ МОДУЛЕЙ»](/content/Courses/SupportAndTesting_of_software_modules/questions.md)
+* [Вопросы к экзамену по дисциплине «ОБЕСПЕЧЕНИЕ КАЧЕСТВА ФУНКЦИОНИРОВАНИЯ КОМПЬЮТЕРНЫХ СИСТЕМ»](/content/Courses/Ensuring_quality_computer_systems_functioning/questions.md)
+* [Вопросы к экзамену по дисциплине "Инструментальные средства разработки ПО"](/content/Courses/SoftwareDevelopmentTools/questions.md)
+* [Вопросы к экзамену по дисциплине "Информационные технологии"](/content/Courses/IT/questions.md)
 
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
