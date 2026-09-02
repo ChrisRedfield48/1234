@@ -184,9 +184,9 @@ git config --global user.email "rosa@mail.ru"
 - LiveServer (**FiveServer**) - превью локального сайта
     - [LiveServer(FiveServer)](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server)
 - **CodeSnap** - скриншотер исходного кода
-    - [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
+    - [CodeSnap (опционально)](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
 - **Trailing Spaces** - удаление "паразитных" пробелов
-    - [Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)
+    - [Trailing Spaces (опционально)](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)
   **Mermaid** - графики, блок-схемы и диаграммы в **Markdown**
 - [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
   **Markdown Syntax Highlighting** - подсветка синтаксиса в **Mermaid**

@@ -14,7 +14,7 @@
 ```shell
 docker pull alt:sisyphus
 ```
-
+ 
 ##### Запустить и использовать
 ```shell
 docker run -ti --rm --name alt alt:sisyphus /bin/bash
