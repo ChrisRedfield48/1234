@@ -20,7 +20,12 @@
 
 ---
 
-> [Минимальные и рекомендуемые технические требования для рабочего пространства современного it-студента](https://gitflic.ru/project/rurewa/cpp/file?branch=master)
+**Минимально-допустимые технические требования к рабочему пространству современного IT-студента**
+
+- Компьютер >= Intel Core Duo, аналогичный от AMD, > 8 Gb RAM, HDD/SSD > 256 Gb + монитор > 19’ (диагональ);
+- Операционная система - Linux: Alt Linux 11 (лучше с KDE) или что-нибудь из семейства Ubuntu 22.04/24.04-64 bit (или её деривативы). Windows 10+ (версия 22H2 (сборка 19045), WSL2.0 или другая виртуальная машина с Linux, например Virtual Box). Регистрация на [Github.com](github.com), [Gitflic.ru](gitflic.ru), [Яндекс](https://ya.ru/);
+- Хороший интернет;
+- Аудиогарнитура (наушники+микрофон).
 
 ## Навигация по документу (GOTO)
 
@@ -33,23 +38,37 @@
 - [Рекомендуемые навыки и умения](#рекомендуемые-навыки-и-умения)
 - [Вопросы к экзаменам](#вопросы-к-экзамену)
 
+---
+
 **Минимальные требования к студентам:**
 
-1. Персональный компьютер с монитором (лучше два монитора) и аудиогарнитура. Хороший интернет
 1. В учёбе по **IT** дисциплинам лучше использовать какой-нибудь **Linux**, например [Альт Образование 11](https://www.basealt.ru/alt-education)
 1. Для пользователей **Linux** [инструкция по получению и настройке Альт Линукс Образование 11](/content/Linux/README.md)
 1. Для пользователей **Windows 10/11** установку приложений в Windows рекомендуется использовать [**WinGet**](https://learn.microsoft.com/ru-ru/windows/package-manager/winget/)! Проверить у себя в **PowerShell** установленный **WinGet** командой `winget --info`. Если не установлен, то:
-    - Установить [WinGet (Windows Package Manager)](https://apps.microsoft.com/detail/9nblggh4nns1?hl=ru-RU&gl=RU) или [с Github](https://github.com/microsoft/winget-cli/releases)
+    - Установить [WinGet - Windows Package Manager](https://apps.microsoft.com/detail/9nblggh4nns1?hl=ru-RU&gl=RU) или [с Github](https://github.com/microsoft/winget-cli/releases)
 1. Приложение [Teams](https://teams.microsoft.com/v2/) или браузер [Edge](https://www.microsoft.com/ru-ru/edge/download?form=MA13FW) или в **PowerShell** - `winget install Microsoft.Teams` и `winget install Microsoft.Edge`
 1. **Git** (Git-Bash) [Git-Bash](https://git-scm.com/) или установить в **PowerShell** командой `winget install Git.Git`
+1. Консольный текстовый редактор Micro (требуется для редакторивания слияний в Git)
+    - Установить Micro в Windows:
+    ```shell
+    winget install --id=zyedidia.micro -e
+    ```
+    - Установить Micro в Alt Linux 11:
+    ```shell
+    epmi --auto micro xclip xsel
+    ```
 1. Регистрация в [Яндекс](https://ya.ru/) или [VK](https://vk.com/) - для регистрации на [Gitflic.ru](gitflic.ru)
 1. Создать публичный репозиторий на [gitflic.ru](gitflic.ru) или [Github](github.com)
 1. **Dia** [Dia](https://ru.wikipedia.org/wiki/Dia) - `winget install gnome.Dia` (опционально)
 1. **VSCode** [VSCode](https://code.visualstudio.com/) или в **PowerShell** - `winget install Microsoft.VisualStudioCode`
-1. [Zed](https://zed.dev/?ref=taaft) - это высокопроизводительный, многопользовательский редактор кода с открытым исходным кодом со встроенным ИИ. 
-    Установка в Windows (PowerShell - Администратор):
+1. [Zed](https://zed.dev/?ref=taaft) - это высокопроизводительный, многопользовательский редактор кода с открытым исходным кодом со встроенным ИИ.
+    - Установка в Windows (PowerShell - Администратор):
     ```shell
     winget install -e --id ZedIndustries.Zed
+    ```
+    - Установка в Alt Linux 11:
+    ```shell
+    su - -c "epmp --auto zed"
     ```
 1. **Termux** (для Андроид) [Termux](https://termux.dev/en/) - опционально
 1. Компилятор **gcc** (Для Windows MSYS2) [MSYS2](https://www.msys2.org/) или [Clang](https://releases.llvm.org/download.html)  или в **PowerShell** - `winget install LLVM.LLVM` - опционально
@@ -74,13 +93,9 @@ winget install Microsoft.Teams Git.Git Microsoft.VisualStudioCode Docker.DockerD
 
 #### Минимальные настройки Git в Windows/Linux
 
-Открыть **Powersheell** или **Git-Bash**
+Открыть **Powersheell / Git-Bash / Terminal**
 
-Выбрать текстовый редактор **Nano** по умолчанию для Windows
-```shell
-git config --global core.editor "nano"
-```
-Выбрать текстовый редактор **Micro** по умолчанию для Linux
+Выбрать текстовый редактор **Nano** по умолчанию для Windows/Linux
 ```shell
 git config --global core.editor "micro"
 ```
@@ -98,7 +113,7 @@ git config --global user.email "rosa@mail.ru"
 
 ---
 
-### WSL 2.0 для Windows 10 и 11
+### WSL 2.0 для Windows 10+
 
 (для работы с Docker etc.)
 
@@ -220,8 +235,8 @@ winget install -e --id ZedIndustries.Zed
     - [Онлайн-клавиатурный тренажер](https://stamina-online.com/ru/)
 1. Эффективная работа с текстом (важные клавиатурные сокращения для редактирование)
 1. Технический английский [Золотой плейлист А. Бербис](https://vkvideo.ru/playlist/-227037029_21?ysclid=mictnz3gl4831947556)
-1. Читать тематические группы в Телеграм/Discord
-1. Git+Markdown+Mermaid+Docker+CI/CD/Linux
+1. Читать тематические группы в `Телеграм/Discord`
+1. `Git+Markdown+Mermaid+Docker+CI/CD/Linux/LLM`
 
 ---
 
