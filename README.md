@@ -22,8 +22,8 @@
 
 **Минимально-допустимые технические требования к рабочему пространству современного IT-студента**
 
-- Компьютер >= Intel Core Duo, аналогичный от AMD, > 8 Gb RAM, HDD/SSD > 256 Gb + монитор > 19’ (диагональ);
-- Операционная система - Linux: Alt Linux 11 (лучше с KDE) или что-нибудь из семейства Ubuntu 22.04/24.04-64 bit (или её деривативы). Windows 10+ (версия 22H2 (сборка 19045), WSL2.0 или другая виртуальная машина с Linux, например Virtual Box). Регистрация на [Github.com](github.com), [Gitflic.ru](gitflic.ru), [Яндекс](https://ya.ru/);
+- Компьютер: CPU >= Intel i3 или аналогичный от AMD, >= 8 Gb RAM, HDD/SSD >= 256 Gb + монитор > 19’ (диагональ);
+- Операционная система - Linux: Alt Linux 11 (лучше с KDE) или что-нибудь из семейства Ubuntu 22.04/24.04-64 bit (или её деривативы). MacOS 15 Sequoia+, Windows 10+ (версия 22H2 (сборка 19045), WSL2.0 или другая виртуальная машина с Linux, например Virtual Box). Регистрация на [Github.com](github.com), [Gitflic.ru](gitflic.ru), [Яндекс](https://ya.ru/);
 - Хороший интернет;
 - Аудиогарнитура (наушники+микрофон).
 
@@ -196,10 +196,8 @@ git config --global user.email "rosa@mail.ru"
 
 ![VS Code](/content/img/VSCODE_ext.jpg)
 
-- LiveServer (**FiveServer**) - превью локального сайта
+- **FiveServer**(LiveServer) - превью локального HTML/JS сайта
     - [LiveServer(FiveServer)](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server)
-- **CodeSnap** - скриншотер исходного кода
-    - [CodeSnap (опционально)](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
 - **Trailing Spaces** - удаление "паразитных" пробелов
     - [Trailing Spaces (опционально)](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)
   **Mermaid** - графики, блок-схемы и диаграммы в **Markdown**
