@@ -123,11 +123,11 @@ git config --global user.email "rosa@mail.ru"
 
 Проверить поддержку **CPU** виртуализации на вашем оборудовании
 
-1. В BIOS **VTx** или **AMD-V** - `enable` (Advanced configuration CPU)
+- В BIOS **VTx** или **AMD-V** - `enable` (Advanced configuration CPU)
 
 #### Основные этапы настройки и установки WSL 2.0
 
-1. Включение дополнения `Подсистема Windows для Linux`
+- Включение дополнения `Подсистема Windows для Linux`
     - Выполнить `Win + R`, в диалоговом окне ввести `appwiz.cpl` и нажать **Enter**.
     - `Программы и компоненты` -> `Включение и отключение дополнительных компонентов Windows` -> поставить флажок в `Подсистема Windows для Linux`
     - Или выполните в **Windows PowerShell** (Администратор) команду: `Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform`
