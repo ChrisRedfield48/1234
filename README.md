@@ -22,8 +22,8 @@
 
 **Минимально-допустимые технические требования к рабочему пространству современного IT-студента**
 
-- Компьютер: CPU >= Intel i3 или аналогичный от AMD, >= 8 Gb RAM, HDD/SSD >= 256 Gb + монитор > 19’ (диагональ);
-- Операционная система - Linux: Alt Linux 11 (лучше с KDE) или что-нибудь из семейства Ubuntu 22.04/24.04-64 bit (или её деривативы). MacOS 15 Sequoia+, Windows 10+ (версия 22H2 (сборка 19045), WSL2.0 или другая виртуальная машина с Linux, например Virtual Box). Регистрация на [Github.com](github.com), [Gitflic.ru](gitflic.ru), [Яндекс](https://ya.ru/);
+- Компьютер: CPU >= **Intel i3** или аналогичный от **AMD**, >= 8 Gb RAM, HDD/SSD >= 256 Gb + монитор > 19’ (диагональ);
+- Операционная система - **Linux**: **Alt Linux 11** (лучше с KDE) или что-нибудь из семейства **Ubuntu** 22.04/24.04-64 bit (или её деривативы). **MacOS** 15 Sequoia+, **Windows** 10+ (версия 22H2 (сборка 19045), `WSL2.0` или другая виртуальная машина с **Linux**, например `Virtual Box`). Регистрация на [Github.com](github.com), [Gitflic.ru](gitflic.ru), [Яндекс](https://ya.ru/);
 - Хороший интернет;
 - Аудиогарнитура (наушники+микрофон).
 
@@ -44,18 +44,22 @@
 
 1. В учёбе по **IT** дисциплинам лучше использовать какой-нибудь **Linux**, например [Альт Образование 11](https://www.basealt.ru/alt-education)
 1. Для пользователей **Linux** [инструкция по получению и настройке Альт Линукс Образование 11](/content/Linux/README.md)
-1. Для пользователей **Windows 10/11** установку приложений в Windows рекомендуется использовать [**WinGet**](https://learn.microsoft.com/ru-ru/windows/package-manager/winget/)! Проверить у себя в **PowerShell** установленный **WinGet** командой `winget --info`. Если не установлен, то:
+1. Для пользователей **Windows 10/11** установку приложений в **Windows** рекомендуется использовать [**WinGet**](https://learn.microsoft.com/ru-ru/windows/package-manager/winget/)! Проверить у себя в **PowerShell** установленный **WinGet** командой `winget --info`. Если не установлен, то:
     - Установить [WinGet - Windows Package Manager](https://apps.microsoft.com/detail/9nblggh4nns1?hl=ru-RU&gl=RU) или [с Github](https://github.com/microsoft/winget-cli/releases)
 1. Приложение [Teams](https://teams.microsoft.com/v2/) или браузер [Edge](https://www.microsoft.com/ru-ru/edge/download?form=MA13FW) или в **PowerShell** - `winget install Microsoft.Teams` и `winget install Microsoft.Edge`
 1. **Git** (Git-Bash) [Git-Bash](https://git-scm.com/) или установить в **PowerShell** командой `winget install Git.Git`
-1. Консольный текстовый редактор Micro (требуется для редакторивания слияний в Git)
-    - Установить Micro в Windows:
+1. Консольный текстовый редактор `Micro` (требуется для редакторивания слияний в **Git**)
+    - Установить **Micro** в **Windows**:
     ```shell
     winget install --id=zyedidia.micro -e
     ```
-    - Установить Micro в Alt Linux 11:
+    - Установить **Micro** в **Alt Linux 11**:
     ```shell
     epmi --auto micro xclip xsel
+    ```
+    - Установить **macOS**:
+    ```shell
+    brew install micro
     ```
 1. Регистрация в [Яндекс](https://ya.ru/) или [VK](https://vk.com/) - для регистрации на [Gitflic.ru](gitflic.ru)
 1. Создать публичный репозиторий на [gitflic.ru](gitflic.ru) или [Github](github.com)
